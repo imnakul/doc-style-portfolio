@@ -60,7 +60,7 @@ export function SidebarNav(): React.ReactNode {
           className="flex items-center gap-2.5 text-left"
           aria-label="Nakul Srivastava home"
         >
-          <div className="relative flex h-7 w-7 shrink-0 overflow-hidden rounded-[6px] border border-[var(--border)] bg-[var(--bg-surface)]">
+          <div className="relative flex h-7 w-7 shrink-0 overflow-hidden rounded-[6px]">
             <Image
               src="/logo-darkmode.png"
               alt="Nakul Srivastava Logo"
@@ -126,7 +126,7 @@ export function SidebarNav(): React.ReactNode {
           <div className="space-y-1.5 border-b border-[var(--border)] pb-5">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-[8px] border border-[var(--border)] bg-[var(--bg-surface)]">
+                <div className="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-[8px]">
                   <Image
                     src="/logo-darkmode.png"
                     alt="Nakul Srivastava Logo"

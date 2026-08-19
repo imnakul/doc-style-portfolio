@@ -18,6 +18,20 @@ export const metadata: Metadata = {
   title: "Nakul Srivastava — Product & Frontend Engineer",
   description: "Portfolio of Nakul Srivastava — Product-focused Frontend Engineer, UI/UX Designer, and AI Systems Builder.",
   keywords: ["Nakul Srivastava", "Frontend Engineer", "UI/UX Designer", "Next.js", "TypeScript", "AI Engineer"],
+  icons: {
+    icon: [
+      {
+        url: "/logo-darkmode.png",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/logo-lightmode.png",
+        media: "(prefers-color-scheme: light)",
+      },
+    ],
+    shortcut: "/logo-darkmode.png",
+    apple: "/logo-darkmode.png",
+  },
 };
 
 export default function RootLayout({
