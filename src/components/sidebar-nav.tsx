@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
-import { Terminal, Github, Twitter, Globe, Mail, Menu, X, ArrowUpRight } from "lucide-react";
+import { Github, Twitter, Globe, Mail, Menu, X, ArrowUpRight } from "lucide-react";
 
 interface NavItem {
   id: string;

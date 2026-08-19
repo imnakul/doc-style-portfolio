@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { craftItems, type CraftItem } from "@/content/craft";
-import { Palette, Sparkles, Layers, Box, Cpu } from "lucide-react";
 
 type CraftType = "all" | "ui-ux" | "logo" | "interaction";
 

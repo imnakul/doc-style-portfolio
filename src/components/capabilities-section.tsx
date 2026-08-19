@@ -1,7 +1,7 @@
 "use client";
 
 import { profile } from "@/content/profile";
-import { Cpu, Layout, Layers, Terminal, Sparkles, Database, Code2 } from "lucide-react";
+import { Terminal } from "lucide-react";
 
 export function CapabilitiesSection(): React.ReactNode {
   return (

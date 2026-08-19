@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { nowItems, activityLogs, generateMockContributions, type ContributionDay } from "@/content/activity";
-import { GitCommit, Activity as ActivityIcon, Calendar, ArrowRight } from "lucide-react";
+import { GitCommit, Calendar } from "lucide-react";
 
 export function ActivitySection(): React.ReactNode {
   const [tab, setTab] = useState<"overview" | "dailylog">("overview");

@@ -1,7 +1,7 @@
 "use client";
 
 import { articles } from "@/content/writes";
-import { BookOpen, Clock, ArrowUpRight } from "lucide-react";
+import { Clock, ArrowUpRight } from "lucide-react";
 
 export function WritesSection(): React.ReactNode {
   return (

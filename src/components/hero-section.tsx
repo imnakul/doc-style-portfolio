@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { profile } from "@/content/profile";
-import { Copy, Check, Terminal, Sparkles, Star, ArrowUpRight, ShieldCheck, Download } from "lucide-react";
+import { Copy, Check, Terminal, Sparkles, Star, ArrowUpRight } from "lucide-react";
 
 export function HeroSection(): React.ReactNode {
   const [copiedCmd, setCopiedCmd] = useState<string | null>(null);

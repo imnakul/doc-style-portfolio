@@ -3,16 +3,11 @@
 import { useState } from "react";
 import { projects, type Project } from "@/content/projects";
 import {
-  Code2,
-  ExternalLink,
   Github,
   ChevronDown,
   ChevronUp,
-  Terminal,
   Copy,
   Check,
-  FolderGit2,
-  Layers,
   ArrowUpRight,
 } from "lucide-react";
 
