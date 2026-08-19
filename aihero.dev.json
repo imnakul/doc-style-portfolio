@@ -1,0 +1,94 @@
+{
+  "source": "https://www.aihero.dev/skills",
+  "tokens": {
+    "spacing": {
+      "scale": [2, 4, 6, 8, 10, 12, 16, 20, 26, 40, 48, 52],
+      "base_unit": 4
+    },
+    "typography": {
+      "families": ["DM Sans", "JetBrains Mono"],
+      "scale": [
+        { "role": "hero", "size": "52px", "weight": "700", "family": "DM Sans" },
+        { "role": "h2", "size": "20px", "weight": "700", "family": "DM Sans" },
+        { "role": "body-lead", "size": "18.5px", "weight": "400", "family": "DM Sans" },
+        { "role": "card-title", "size": "16px", "weight": "500", "family": "DM Sans" },
+        { "role": "body", "size": "14px", "weight": "400", "family": "DM Sans" },
+        { "role": "nav-label", "size": "13px", "weight": "500", "family": "DM Sans" },
+        { "role": "mono-code", "size": "13px", "weight": "400", "family": "JetBrains Mono" },
+        { "role": "mono-meta", "size": "11px", "weight": "500", "family": "JetBrains Mono" },
+        { "role": "micro-badge", "size": "9px", "weight": "500", "family": "JetBrains Mono" }
+      ]
+    },
+    "colors": [
+      { "role": "background", "value": "#080808" },
+      { "role": "surface-primary", "value": "#0B0B0B" },
+      { "role": "surface-secondary", "value": "#0D0D0C" },
+      { "role": "surface-elevated", "value": "#100F0E" },
+      { "role": "text-primary", "value": "#F4F3F1" },
+      { "role": "text-secondary", "value": "rgba(244, 243, 241, 0.72)" },
+      { "role": "text-muted", "value": "rgba(244, 243, 241, 0.60)" },
+      { "role": "text-faint", "value": "rgba(244, 243, 241, 0.30)" },
+      { "role": "accent", "value": "#F5C451" },
+      { "role": "accent-surface", "value": "rgba(245, 196, 81, 0.07)" },
+      { "role": "accent-border", "value": "rgba(245, 196, 81, 0.35)" },
+      { "role": "border", "value": "rgba(255, 255, 255, 0.08)" },
+      { "role": "border-hover", "value": "rgba(255, 255, 255, 0.12)" }
+    ],
+    "radius": ["4px", "6px", "8px", "9px", "11px"],
+    "shadows": ["none"],
+    "image_ratios": [
+      { "usage": "thumbnail", "ratio": "1:1" }
+    ],
+    "grid": {
+      "max_width": "972px",
+      "columns": 2,
+      "gutter": "48px"
+    }
+  },
+  "taste": [
+    {
+      "name": "Technical Terminal Aesthetics over Marketing Decor",
+      "trigger": "When designing the hero and core value proposition on a developer tool landing page",
+      "decision": "Chose an interactive IDE-style 2-column documentation layout with terminal command snippets ($ npx skills@latest, JetBrains Mono, copy button) over marketing illustration graphics, 3D renders, or gradient hero backdrops",
+      "reason": "Because senior engineers evaluate technical tools through executable CLI commands and direct utility rather than abstract decorative marketing imagery",
+      "evidence": [
+        "Zero hero illustrations or decorative gradient meshes",
+        "Prominent terminal install boxes with 1px rgba(255, 255, 255, 0.08) borders",
+        "108 computed instances of JetBrains Mono for commands, badges, and step indices"
+      ]
+    },
+    {
+      "name": "Strict Single-Accent Sparsity over Multi-Color Visual Richness",
+      "trigger": "When assigning color across navigation, badges, cards, metrics, and interactive elements",
+      "decision": "Chose a strictly constrained warm gold (#F5C451) occupying under 0.5% of total surface area over multi-color category tags, rainbow gradients, or colored card backgrounds",
+      "reason": "Because restricting accent color strictly to primary conversion actions (Get the free course, Start the email course) and high-signal indicators (NEW badge, star count) prevents cognitive noise and guides user focus immediately to key actions",
+      "evidence": [
+        "Surface area analysis confirms #080808 and #0B0B0B cover >95% of background area",
+        "#F5C451 appears on only 2 primary buttons, 1 star icon, and 1px badge outlines"
+      ]
+    },
+    {
+      "name": "Hairline Border Separation over Elevation Drop Shadows",
+      "trigger": "When establishing visual boundaries and separation between content cards, sidebar, and sections",
+      "decision": "Chose 1px solid hairline borders (rgba(255, 255, 255, 0.08)) with subtle surface brightness stepping (#080808 to #0B0B0B) over diffused drop shadows or elevated cards",
+      "reason": "Because hard hairlines reflect code editor precision and maintain visual calmness in high-density technical layouts where blurred drop shadows create visual muddiness",
+      "evidence": [
+        "0px box shadows across all cards and containers",
+        "48 instances of 1px solid rgba(255, 255, 255, 0.08) hairline dividers"
+      ]
+    },
+    {
+      "name": "Opacity-Stepped Text Hierarchy over Multi-Font/Color Variation",
+      "trigger": "When conveying depth, hierarchy, and reading precedence across dense technical information",
+      "decision": "Chose single-hue opacity stepping of off-white #F4F3F1 (100%, 72%, 60%, 52%, 30%) over introducing muted gray secondary palettes or multiple font families",
+      "reason": "Because opacity steps on a single warm off-white anchor maintain consistent contrast ratios and color temperature across dark background layers without hue drift dissonance",
+      "evidence": [
+        "113 occurrences of rgba(244, 243, 241, 0.60)",
+        "66 occurrences of rgb(244, 243, 241)",
+        "32 occurrences of 0.72 alpha",
+        "21 occurrences of 0.30 alpha",
+        "17 occurrences of 0.52 alpha"
+      ]
+    }
+  ]
+}

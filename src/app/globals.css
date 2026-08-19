@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #080808;
+  --bg-surface: #0b0b0b;
+  --bg-surface-sub: #0d0d0c;
+  --bg-surface-elevated: #100f0e;
+  --text-primary: #e6faf8;
+  --text-secondary: rgba(204, 251, 241, 0.74);
+  --text-muted: rgba(204, 251, 241, 0.52);
+  --text-faint: rgba(204, 251, 241, 0.30);
+  --accent: #2dd4bf;
+  --accent-fg: #042f2e;
+  --accent-bg: rgba(45, 212, 191, 0.08);
+  --accent-border: rgba(45, 212, 191, 0.35);
+  --border: rgba(204, 251, 241, 0.10);
+  --border-hover: rgba(204, 251, 241, 0.22);
+  --heatmap-empty: rgba(255, 255, 255, 0.05);
+  --heatmap-1: rgba(45, 212, 191, 0.25);
+  --heatmap-2: rgba(45, 212, 191, 0.50);
+  --heatmap-3: rgba(45, 212, 191, 0.75);
+  --heatmap-4: #2dd4bf;
+}
+
+[data-theme="light"] {
+  --bg-page: #f8fafa;
+  --bg-surface: #ffffff;
+  --bg-surface-sub: #f0f5f5;
+  --bg-surface-elevated: #e6eeee;
+  --text-primary: #0f2f2e;
+  --text-secondary: #134e4a;
+  --text-muted: #0d9488;
+  --text-faint: rgba(15, 47, 46, 0.42);
+  --accent: #0f766e;
+  --accent-fg: #ffffff;
+  --accent-bg: rgba(15, 118, 110, 0.08);
+  --accent-border: rgba(15, 118, 110, 0.35);
+  --border: rgba(15, 47, 46, 0.12);
+  --border-hover: rgba(15, 47, 46, 0.25);
+  --heatmap-empty: rgba(15, 47, 46, 0.08);
+  --heatmap-1: rgba(13, 148, 136, 0.30);
+  --heatmap-2: rgba(13, 148, 136, 0.55);
+  --heatmap-3: rgba(13, 148, 136, 0.80);
+  --heatmap-4: #0f766e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mono {
+  font-family: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom scrollbar matching aihero hairline style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
