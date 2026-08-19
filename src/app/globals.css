@@ -65,6 +65,21 @@ body {
   font-family: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
+/* Theme-adaptive logo switching without layout shift */
+.theme-logo-dark {
+  display: block !important;
+}
+.theme-logo-light {
+  display: none !important;
+}
+
+[data-theme="light"] .theme-logo-dark {
+  display: none !important;
+}
+[data-theme="light"] .theme-logo-light {
+  display: block !important;
+}
+
 /* Custom scrollbar matching aihero hairline style */
 ::-webkit-scrollbar {
   width: 6px;

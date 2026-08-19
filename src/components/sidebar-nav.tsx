@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
 import { Terminal, Github, Twitter, Globe, Mail, Menu, X, ArrowUpRight } from "lucide-react";
 
@@ -59,8 +60,23 @@ export function SidebarNav(): React.ReactNode {
           className="flex items-center gap-2.5 text-left"
           aria-label="Nakul Srivastava home"
         >
-          <div className="flex h-7 w-7 items-center justify-center rounded-[6px] border border-[var(--border)] bg-[var(--bg-surface)] font-mono text-xs font-bold text-[var(--accent)]">
-            NS
+          <div className="relative flex h-7 w-7 shrink-0 overflow-hidden rounded-[6px] border border-[var(--border)] bg-[var(--bg-surface)]">
+            <Image
+              src="/logo-darkmode.png"
+              alt="Nakul Srivastava Logo"
+              width={28}
+              height={28}
+              className="theme-logo-dark h-full w-full object-cover"
+              priority
+            />
+            <Image
+              src="/logo-lightmode.png"
+              alt="Nakul Srivastava Logo"
+              width={28}
+              height={28}
+              className="theme-logo-light h-full w-full object-cover"
+              priority
+            />
           </div>
           <span className="text-sm font-semibold tracking-tight text-[var(--text-primary)]">
             Nakul Srivastava
@@ -106,18 +122,33 @@ export function SidebarNav(): React.ReactNode {
       {/* Desktop Sticky Sidebar (240px) */}
       <aside className="sticky top-0 hidden h-screen w-60 shrink-0 flex-col justify-between border-r border-[var(--border)] bg-[var(--bg-page)] p-5 lg:flex">
         <div className="space-y-6">
-          {/* Header & Moniker */}
+          {/* Header & Moniker with Theme-Adaptive Logo */}
           <div className="space-y-1.5 border-b border-[var(--border)] pb-5">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 items-center justify-center rounded-[8px] border border-[var(--border)] bg-[var(--bg-surface)] font-mono text-xs font-bold text-[var(--accent)]">
-                  NS
+              <div className="flex items-center gap-2.5">
+                <div className="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-[8px] border border-[var(--border)] bg-[var(--bg-surface)]">
+                  <Image
+                    src="/logo-darkmode.png"
+                    alt="Nakul Srivastava Logo"
+                    width={32}
+                    height={32}
+                    className="theme-logo-dark h-full w-full object-cover"
+                    priority
+                  />
+                  <Image
+                    src="/logo-lightmode.png"
+                    alt="Nakul Srivastava Logo"
+                    width={32}
+                    height={32}
+                    className="theme-logo-light h-full w-full object-cover"
+                    priority
+                  />
                 </div>
                 <div>
                   <h1 className="text-sm font-semibold tracking-tight text-[var(--text-primary)]">
                     Nakul Srivastava
                   </h1>
-                  <p className="font-mono text-[11px] text-[var(--text-muted)]">Frontend & AI Systems</p>
+                  <p className="font-mono text-[11px] text-[var(--text-muted)]">Frontend &amp; AI Systems</p>
                 </div>
               </div>
             </div>
