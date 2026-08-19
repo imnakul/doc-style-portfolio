@@ -6,8 +6,14 @@ import { CraftSection } from "@/components/craft-section";
 import { WritesSection } from "@/components/writes-section";
 import { CapabilitiesSection } from "@/components/capabilities-section";
 import { ContactSection } from "@/components/contact-section";
+import { getGithubContributions, getGithubEvents } from "@/lib/github";
 
-export default function Home(): React.ReactNode {
+export default async function Home(): Promise<React.ReactElement> {
+  const [githubContributions, githubEvents] = await Promise.all([
+    getGithubContributions("imnakul"),
+    getGithubEvents("imnakul"),
+  ]);
+
   return (
     <div className="min-h-screen bg-[var(--bg-page)] text-[var(--text-primary)]">
       {/* 2-Column IDE / Documentation Layout */}
@@ -19,7 +25,10 @@ export default function Home(): React.ReactNode {
         <main className="flex-1 overflow-x-hidden px-4 py-6 sm:px-8 sm:py-10 lg:px-12 lg:py-12">
           <div className="mx-auto max-w-[972px] space-y-2">
             <HeroSection />
-            <ActivitySection />
+            <ActivitySection
+              initialContributions={githubContributions}
+              initialEvents={githubEvents}
+            />
             <DevelopSection />
             <CraftSection />
             <WritesSection />
